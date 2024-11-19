@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { MdOutlineEmail } from "react-icons/md";
 import FormikControl from "../components/formikElements/FormikControl";
 import toast from "react-hot-toast";
-import Loading from "../components/Loading";
 import { UserContext } from "../contexts/UserContext";
 import supabase from "../Api/config";
 import Title from "../components/Title";
@@ -27,9 +26,8 @@ export default function ResetPassword() {
   };
 
   async function submitHandler(values) {
-
     setLoading(true);
-    
+
     const {
       data: { users },
       error,
@@ -69,8 +67,6 @@ export default function ResetPassword() {
           onSubmit={submitHandler}
         >
           {(formik) => {
-            // console.log(formik);
-
             return (
               <>
                 <Form>

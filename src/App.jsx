@@ -26,7 +26,6 @@ function App() {
   ) : (
     <div className={`${theme === "dark" ? "dark" : ""}`}>
       <div
-      // pr-40 max-[578px]:pr-0
         className={`dark:text-white dark:bg-gray-700 pt-16 min-h-screen`}
       >
         <Header />

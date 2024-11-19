@@ -16,11 +16,13 @@ export default function UserProvider({ children }) {
     if (user) setUser(user);
   }
   async function getNotifs() {
-    const { status, data } = await supabase
-      .from("notifs")
-      .select()
-      .eq("userId", user.id);
-    if (status == 200) setNotifications(data);
+    if (isLogin) {
+      const { status, data } = await supabase
+        .from("notifs")
+        .select()
+        .eq("userId", user.id);
+      if (status == 200) setNotifications(data);
+    }
   }
 
   async function addNotif(userId, title, body) {

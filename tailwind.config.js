@@ -19,9 +19,6 @@ module.exports = {
       screens: {
         400: '400px',
       },
-      colors: {
-        'orange-primary': 'rgb(255,73,31)'
-      },
       fontFamily: {
         vazirBlack: ['Vazir-Black', 'system-ui'],
         vazirBold: ['Vazir-Bold', 'system-ui'],

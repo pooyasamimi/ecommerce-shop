@@ -15,27 +15,30 @@ function CartProvider({ children }) {
   const [totalPrice, setTotalPrice] = useState(0);
   const [discount, setDiscount] = useState(0);
   async function getCart() {
-    const { data } = await supabase
-      .from("carts")
-      .select("cart")
-      .eq("userId", user.id);
-    const [first] = data;
-    if (first?.cart) {
-      setCart(first.cart.map((item) => JSON.parse(item)));
-      // setCart([...data[0]?.cart].map((item) => JSON.parse(item)));
+    if (isLogin) {
+      const { data } = await supabase
+        .from("carts")
+        .select("cart")
+        .eq("userId", user.id);
+      const [first] = data;
+      if (first?.cart) {
+        setCart(first.cart.map((item) => JSON.parse(item)));
+        // setCart([...data[0]?.cart].map((item) => JSON.parse(item)));
+      }
     }
   }
 
   async function updateSupabase(column, data) {
-    const { error } = await supabase
-      .from("carts")
-      .update({ [column]: data })
-      .eq("userId", user.id);
-    if (error) {
-      console.log(error);
-      toast.error(
-        `تغییر سبد خرید در دیتابیس با ارور مواجه شد اینترنت یا فیلترشکن چک کنید ${error}`
-      );
+    if (isLogin) {
+      const { error } = await supabase
+        .from("carts")
+        .update({ [column]: data })
+        .eq("userId", user.id);
+      if (error) {
+        toast.error(
+          `تغییر سبد خرید در دیتابیس با ارور مواجه شد اینترنت یا فیلترشکن چک کنید`
+        );
+      }
     }
   }
   useEffect(() => {

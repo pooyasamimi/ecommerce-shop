@@ -16,7 +16,6 @@ export default function Search() {
 
   function searchHandler() {
     if (search.length >= 2) {
-      console.log("2 ", searchList);
       const filterProducts = [...searchList].filter((product) =>
         product.title.toLowerCase().includes(search)
       );

@@ -6,7 +6,6 @@ import { BiUser } from "react-icons/bi";
 import FormikControl from "../components/formikElements/FormikControl";
 import supabase from "../Api/config";
 import toast from "react-hot-toast";
-import Loading from "../components/Loading";
 import Title from "../components/Title";
 import FormWrapper from "../components/FormWrapper";
 

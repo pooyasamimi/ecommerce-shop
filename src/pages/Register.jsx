@@ -1,7 +1,7 @@
 import { Formik, Form } from "formik";
 import React, { useContext, useEffect, useState } from "react";
 import { object, string, ref } from "yup";
-import { Link, redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
 import FormikControl from "../components/formikElements/FormikControl";
@@ -78,8 +78,6 @@ export default function Register() {
           onSubmit={submitHandler}
         >
           {(formik) => {
-            // console.log(formik);
-
             return (
               <>
                 <Form>

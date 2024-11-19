@@ -2,10 +2,8 @@ import React, { useContext } from "react";
 import Title from "../components/Title";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../contexts/ProductContext";
-import Header from "../components/Header";
 import LoadingAnimate from "../components/LoadingAnimate";
 import { CartContext } from "../contexts/CartContext";
-import CategorySidebar from "../components/CategorySidebar";
 
 const ProductDetails = () => {
   const { products } = useContext(ProductContext);
@@ -15,7 +13,7 @@ const ProductDetails = () => {
 
   return (
     <>
-      <Title>name product</Title>
+      <Title>{product.title}</Title>
       {!product ? (
         <LoadingAnimate />
       ) : (

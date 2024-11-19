@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import instance from "../utils/axiosShopInstance";
+import toast from "react-hot-toast";
 
 export const ProductContext = createContext();
 const ProductProvider = ({ children }) => {
@@ -11,7 +12,9 @@ const ProductProvider = ({ children }) => {
       .then((res) => {
         setProducts(res.data.products);
       })
-      .catch((err) => console.log(err));
+      .catch((err) =>
+        toast.error(`اینترنت مشکل داره یا فیلترشکن بزنید و ${err}`)
+      );
   }
 
   useEffect(() => {

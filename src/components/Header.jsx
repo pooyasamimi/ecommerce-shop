@@ -8,7 +8,6 @@ import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { UserContext } from "../contexts/UserContext";
-import supabase from "../Api/config";
 import { CartContext } from "../contexts/CartContext";
 import Search from "./Search";
 

@@ -1,14 +1,13 @@
 import { Field, Formik, Form } from "formik";
 import React, { useContext, useEffect, useState } from "react";
-import { object, string, ref } from "yup";
+import { object, string } from "yup";
 import { Link, useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
 import FormikControl from "../components/formikElements/FormikControl";
 import supabase from "../Api/config";
 import toast from "react-hot-toast";
-import { FaGithub } from "react-icons/fa6";
-import Loading from "../components/Loading";
+
 import Title from "../components/Title";
 import FormWrapper from "../components/FormWrapper";
 import GithubLogin from "../components/GithubLogin";

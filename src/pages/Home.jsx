@@ -25,6 +25,7 @@ import Pagination from "../components/Pagination";
 import usePagination from "../components/hooks/usePagination";
 import { IoCloseOutline } from "react-icons/io5";
 import LoadingAnimate from "../components/LoadingAnimate";
+import toast from "react-hot-toast";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
@@ -55,6 +56,17 @@ const Home = () => {
 
   useEffect(() => {
     userIsLoginH();
+    toast.success("برای تجربه بهتر حتما فیلترشکنو روشن کنید", {
+      style: {
+        border: "1px solid #713200",
+        padding: "16px",
+        color: "#334155",
+      },
+      iconTheme: {
+        primary: "#f97316",
+        secondary: "#FFFAEE",
+      },
+    });
   }, []);
   useEffect(() => {
     setCurrentPage(1);
@@ -159,7 +171,9 @@ const Home = () => {
             <ul className="flex gap-2 mb-3 flex-wrap text-sm justify-center xl:justify-normal">
               <li
                 className={`px-3 py-1.5 transition-colors cursor-pointer duration-500 ease-in-out rounded-full ${
-                  activeFilter == "all" ? "bg-orange-500 text-white dark:bg-zinc-900" : ""
+                  activeFilter == "all"
+                    ? "bg-orange-500 text-white dark:bg-zinc-900"
+                    : ""
                 }`}
                 data-name="all"
                 onClick={() => setActiveFilter("all")}
@@ -179,7 +193,9 @@ const Home = () => {
               </li>
               <li
                 className={`px-3 py-1.5 transition-colors cursor-pointer duration-500 ease-in-out  rounded-full ${
-                  activeFilter == "cheap" ? "bg-orange-500 text-white dark:bg-zinc-900" : ""
+                  activeFilter == "cheap"
+                    ? "bg-orange-500 text-white dark:bg-zinc-900"
+                    : ""
                 }`}
                 data-name="cheap"
                 onClick={() => setActiveFilter("cheap")}
@@ -188,7 +204,9 @@ const Home = () => {
               </li>
               <li
                 className={`px-3 py-1.5 transition-colors cursor-pointer duration-500 ease-in-out  rounded-full ${
-                  activeFilter == "onSale" ? "bg-orange-500 text-white dark:bg-zinc-900" : ""
+                  activeFilter == "onSale"
+                    ? "bg-orange-500 text-white dark:bg-zinc-900"
+                    : ""
                 }`}
                 data-name="onSale"
                 onClick={() => setActiveFilter("onSale")}
