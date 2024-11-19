@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-import supabase from "../Api/config";
+import supabase from "../../utils/supabase/config";
 import toast from "react-hot-toast";
 
 export const UserContext = createContext();

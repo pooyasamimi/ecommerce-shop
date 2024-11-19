@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
-import supabase from "../Api/config";
+import supabase from "../../utils/supabase/config";
 
 
 async function signInWithGithubH() {

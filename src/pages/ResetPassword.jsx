@@ -6,11 +6,11 @@ import { MdOutlineEmail } from "react-icons/md";
 import FormikControl from "../components/formikElements/FormikControl";
 import toast from "react-hot-toast";
 import { UserContext } from "../contexts/UserContext";
-import supabase from "../Api/config";
+import supabase from "../../utils/supabase/config";
 import Title from "../components/Title";
 import FormWrapper from "../components/FormWrapper";
 import FormLink from "../components/FormLink";
-import supabaseAdmin from "../Api/adminConfig";
+import supabaseAdmin from "../../utils/supabase/adminConfig";
 
 export default function ResetPassword() {
   const [loading, setLoading] = useState(false);

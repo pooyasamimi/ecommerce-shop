@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { createContext } from "react";
-import supabase from "../Api/config";
+import supabase from "../../utils/supabase/config";
 import { UserContext } from "./UserContext";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";

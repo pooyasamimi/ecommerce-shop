@@ -1,6 +1,4 @@
-import React from "react";
-import toast from "react-hot-toast";
-import supabase from "../Api/config";
+
 
 
 export function numFa(number) {

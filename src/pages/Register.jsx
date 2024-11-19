@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
 import FormikControl from "../components/formikElements/FormikControl";
-import supabase from "../Api/config";
+import supabase from "../../utils/supabase/config";
 import toast from "react-hot-toast";
 import Loading from "../components/Loading";
 import Title from "../components/Title";
