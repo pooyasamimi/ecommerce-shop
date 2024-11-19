@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Vazir-Black;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-Black.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Vazir-Bold;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Vazir-ExtraBold;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-ExtraBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Vazir-ExtraLight;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-ExtraLight.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Vazir-Light;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Vazir-Medium;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Vazir-Regular;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Vazir-SemiBold;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-SemiBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Vazir-Thin;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/vazir/Vazirmatn-Thin.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: PerNum-Bold;
+    font-style: normal;
+    font-display: swap;
+    src: url(./assets/fonts/numbers/PersianPageNumber-Bold.ttf)
+      format("truetype");
+  }
+
+  body {
+    @apply font-vazirMedium;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
