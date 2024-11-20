@@ -103,6 +103,7 @@ function CartProvider({ children }) {
   function priceH() {
     setPrice(0);
     setTotalPrice(0);
+    
     cart.forEach((item) => setPrice((prev) => prev + item.price));
     cart.forEach((item) => setTotalPrice((prev) => prev + item.discountPrice));
     setDiscount((price - totalPrice).toFixed(2));

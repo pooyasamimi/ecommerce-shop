@@ -47,7 +47,7 @@ export default function Cart() {
             {!cart.length ? (
               <div className="text-center">
                 <img
-                  src="src/assets/img/empty-cart.svg"
+                  src="/assets/img/empty-cart.svg"
                   alt="cart is empty"
                   className="w-72 h-72 inline-block"
                   draggable="false"

@@ -5,10 +5,10 @@ import { TiVendorMicrosoft } from "react-icons/ti";
 
 // باید to هارو درست کنم
 export const hotSaleSlides = [
-    { id: 1, img: "src/assets/img/mega-sale.avif", to: "/" },
-    { id: 2, img: "src/assets/img/mega-sale2.avif", to: "/" },
-    { id: 3, img: "src/assets/img/hotsale.jpg", to: "/" },
-    { id: 5, img: "src/assets/img/black-friday2-min.jpg", to: "/" },
+    { id: 1, img: "/assets/img/mega-sale.avif", to: "/" },
+    { id: 2, img: "/assets/img/mega-sale2.avif", to: "/" },
+    { id: 3, img: "/assets/img/hotsale.jpg", to: "/" },
+    { id: 5, img: "/assets/img/Black-friday2-min.jpg", to: "/" },
 ];
 
 export const hotSeleProducts = [23, 35, 25, 45];

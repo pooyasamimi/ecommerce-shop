@@ -39,15 +39,3 @@ export default function FormWrapper({ children }) {
     </div>
   );
 }
-
-
-{/* <div className="bg-slate-50 dark:bg-gray-700 mt-10 flex justify-center h-fit">
-<div className="dark:text-white w-[94%] max-w-[28rem] border border-slate-700 dark:border-slate-300 rounded-md p-5 lg:p-8 flex flex-col items-start">
-  <div className="mx-auto rounded-xl overflow-hidden">
-      <video src="./src/assets/img/logo.mp4" autoPlay loop muted/>
-  </div>
-  <h1 className="text-2xl font-vazirBold mt-4 mb-3 text-center">ورود</h1>
-  <p className="mb-6">سلام دوست من :) لطفا اطلاعات زیرو پر کن 💜</p>
-  <div className="w-full">{children}</div>
-</div>
-</div> */}
