@@ -8,7 +8,7 @@ export default function HotSelerCard({
 }) {
   return (
     <>
-      <div className="flex gap-2 items-center flex-grow justify-center">
+      <div className="flex gap-2 items-center flex-grow">
         <div
           className="h-8 w-8 rounded-lg flex justify-center items-center [&>*]:h-5 [&>*]:w-5 [&>*]:text-white"
           style={{ backgroundColor: bgColor }}
